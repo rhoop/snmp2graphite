@@ -1,0 +1,98 @@
+{
+  "environment": "PRODUCTION",
+  "community": "public",
+  "version": "2c",
+  "interval": "5",
+  "hosts": [
+    {
+      "name": "bigip001.mydomain.com",
+      "ip": "192.168.10.205"
+    },
+    {
+      "name": "bigip002.mydomain.com",
+      "ip": "192.168.10.206"
+    }
+  ],
+  "checks": [
+    {
+      "name": "sys.TcpStatAccepts",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.12.6"
+    },
+    {
+      "name": "sys.stat.ServerTotConns",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.14"
+    },
+    {
+      "name": "sys.stat.ClientCurConns",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.8"
+    },
+    {
+      "name": "sys.stat.ClientBytesIn",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.60"
+    },
+    {
+      "name": "sys.stat.ClientBytesOut",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.62"
+    },
+    {
+      "name": "sys.stat.ServerBytesIn",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.67"
+    },
+    {
+      "name": "sys.stat.ServerBytesOut",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.69"
+    },
+    {
+      "name": "sys.GlobalHost.CpuUser1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.22"
+    },
+    {
+      "name": "sys.GlobalHost.CpuNice1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.23"
+    },
+    {
+      "name": "sys.GlobalHost.CpuSystem1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.24"
+    },
+    {
+      "name": "sys.GlobalHost.CpuIdle1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.25"
+    },
+    {
+      "name": "sys.GlobalHost.CpuIrq1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.26"
+    },
+    {
+      "name": "sys.GlobalHost.CpuSoftirq1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.27"
+    },
+    {
+      "name": "sys.GlobalHost.CpuIowait1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.28"
+    },
+    {
+      "name": "sys.GlobalHost.CpuUsageRatio1m",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.20.29"
+    },
+    {
+      "name": "sys.stat.MemoryUsed ",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.45",
+      "transform": "byteToGigabyte"
+    },
+    {
+      "name": "sys.host.MemoryUsed",
+      "oid": ".1.3.6.1.4.1.3375.2.1.7.1.2",
+      "transform": "byteToGigabyte"
+    },
+    {
+      "name": "sys.stat.HttpRequests",
+      "oid": ".1.3.6.1.4.1.3375.2.1.1.2.1.56",
+      "transform": "deltaByInterval"
+    },
+    {
+      "name": "sys.GlobalHost.BusiestCPU",
+      "oid": ".1.3.6.1.4.1.3375.2.1.7.5.2.1.12",
+      "transform": "largestValue"
+    }
+  ]
+}

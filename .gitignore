@@ -1,0 +1,67 @@
+# Compiled source #
+###################
+*.pyc
+venv
+# Running Process #
+###################
+*.pid
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.cache
+.bash_history
+.nano_history
+.rediscli_history
+.ssh/known_hosts
+.psql_history
+.swp
+
+# Vagrant #
+###########
+.vagrant
+
+# Ansible #
+###########
+# put temporary playbooks here:
+playbooks/temp/*
+
+
+# Sublime Text #
+################
+ansible.sublime-*
+
+# Ecli[pse #
+###########
+.project
+.settings
+.pydevproject
+
+docsite/.doctrees
+docsite/htmlout
+docsite/_build
+!docsite/rst/index.rst
+docsite/rst/*

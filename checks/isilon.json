@@ -1,0 +1,46 @@
+{
+  "environment": "PRODUCTION",
+  "community": "public",
+  "version": "2c",
+  "interval": "5",
+  "hosts": [
+    {
+      "name": "vip-isi.isi.mydomain.com",
+      "ip": "192.168.10.205"
+    }
+  ],
+  "checks": [
+    {
+      "name": "isilon-cluster.nodeCount",
+      "oid": ".1.3.6.1.4.1.12124.1.1.4"
+    },
+    {
+      "name": "isilon-cluster.ifsInBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.2.1.1"
+    },
+    {
+      "name": "isilon-cluster.ifsOutBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.2.1.3"
+    },
+    {
+      "name": "isilon-cluster.networkInBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.2.2.1"
+    },
+    {
+      "name": "isilon-cluster.networkOutBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.2.2.3"
+    },
+    {
+      "name": "isilon-cluster.ifsTotalBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.3.1"
+    },
+    {
+      "name": "isilon-cluster.ifsUsedBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.3.2"
+    },
+    {
+      "name": "isilon-cluster.ifsAvailableBytes",
+      "oid": ".1.3.6.1.4.1.12124.1.3.3"
+    }
+  ]
+}
