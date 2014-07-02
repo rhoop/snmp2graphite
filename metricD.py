@@ -2,15 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #
-# Copyright (c) 2013 Richard Hoop All Rights Reserved
-#
-# !!THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE!!
-#
-# The copyright notice above does not provide evidence of any
-# actual or intended publication of such source code.
-#
-# Redistribution and use in source and binary forms,
-# with or without modification is STRICTLY PROHIBITED!
+# Richard Hoop - wrhoop@gmail.com
 #
 
 import sys
